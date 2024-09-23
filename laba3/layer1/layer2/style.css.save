@@ -1,0 +1,28 @@
+footer {
+	padding:30px 10px;
+	margin-top: 10px;
+	border-top:1px solid black;
+}
+
+body {
+	margin:0px;
+}
+
+div#content {
+	max-width: 960px;
+ 	margin-left: auto;
+ 	margin-right: auto;
+}
+
+table {
+	border: 1px solid;
+	border-color:black;
+	width: 100%;
+	margin-top:40px;
+	margin-bottom: 40px;
+	border-collapse: collapse;
+}
+
+td {
+	text-align: center;
+	padding: 
