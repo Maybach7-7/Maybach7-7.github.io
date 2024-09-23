@@ -12,7 +12,7 @@
 <header>
         <div class="header-content-first">
             <img src="starbucks.png" alt="Логотип" id="logo">
-            <h1 id="main-name" class="zcool-qingke-huangyou-regular">共产主义万岁</h1>
+            <h1 id="main-name">妻子猫</h1>
         </div>
         <nav class="header-content-second">
             <ul>
@@ -23,217 +23,219 @@
         </nav>
 </header>
 
+<main id="content">
+
+    <div id="list">
+        <h2 id="title">Ненумерованный список</h2>
+        <ul>
+            <li><a href="http://kubsu.ru" id="main_site">Абсолютная ссылка на главную страницу kubsu</a></li>
+
+            <li><a href="https://kubsu.ru/">Абсолютная ссылка на главный сайт KubSU в протокле https</a></li>
+
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./image.jpg" alt="Изображение" ></a></li>
+
+            <li><a href="/layer1/layer2/test.html">Сокращённая ссылка на внутреннюю страницу test.html</a></li>
+
+            <li><a href="/layer1/layer2/index.html">Сокращённая ссылка на главную страницу</a></li>
+
+            <li><a href="#title">Ссылка на фрагмент текущей страницы (заголовок h1)</a></li>
+
+            <li><a href="https://example.com/?a=228&b=4&g=1337">Ссылка с тремя параметрами в URL</a></li>
+
+            <li><a href="https://example.com/?id=1337228">Ссылка с параметром id в URL</a></li>
+
+            <li><a href="./test.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+
+            <li><a href="./about/about-page.html">Относительная ссылка на страницу в каталоге about</a></li>
+
+            <li><a href="../middle.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+
+            <li><a href="../../top.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+
+            <li>
+                <p>
+                    Контекстная <a href="test.html">ссылка</a> в тексте абзаца
+                </p>
+            </li>
+
+            <li><a href="https://en.wikipedia.org/wiki/Main_Page#vector-main-menu-dropdown-checkbox">Ссылка на фрагмент страницы стороннего сайта</a>
+            </li>
+
+            <li>
+                <img src="planets.gif" height="126" alt="Planets" usemap="#planetmap">
+                <map name="planetmap" id="planetmap">
+                    <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+                    <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+                    <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+                </map>
+            </li>
+
+            <li><a href="">Ссылка с пустым href</a></li>
+
+            <li><a>Ссылка без href</a></li>
+
+            <li><a href="https://kubsu.ru" rel="nofollow">Ссылка</a>, по которой запрещён переход поисковикам</li>
+
+            <li>
+            <!--noindex-->
+                <a href="https://www.kubsu.ru/index.php">Ссылка</a>, запрещённая для индексации поисковиками
+            <!--/noindex-->
+            </li>
 
 
-<main id="content" class="hidden">
+            <li>Нумерованный список ссылок с подписями title
+                <ol>
+                    <li><a href="https://www.kubsu.ru/ru/fktipm"
+                           title="Факультет компьютерных технологий и прикладной математики">ФКТиПМ</a></li>
+                    <li><a href="https://www.kubsu.ru/ru/rgf" title="Факультет романо-германской филологии">РГФ</a></li>
+                    <li><a href="https://www.kubsu.ru/ru/econ" title="Экономический факультет">Эконом</a></li>
 
-    <h1 id="title">Ненумерованный список</h1>
-    <ul>
-        <li><a href="http://kubsu.ru" id="main_site">Абсолютная ссылка на главную страницу kubsu</a></li>
+                </ol>
+            </li>
 
-        <li><a href="https://kubsu.ru/">Абсолютная ссылка на главный сайт KubSU в протокле https</a></li>
+            <li><a href="ftp://user:password@theftpserver.com/files/accounts.pdf">Ссылка</a> на файл на сервере FTP с
+                авторизацией
+            </li>
+        </ul>
+    </div>
 
-        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./image.jpg" alt="Изображение" width="560"
-                                                                       height="420"></a></li>
+    <div id="table-content" style="overflow-x: auto;">
+        <table id="table" >
+        <tr>
+            <th colspan="2">Заголовок 1</th>
+            <th>Заголовок 2</th>
+            <th>Заголовок 3</th>
+            <th>Заголовок 4</th>
+            <th>Заголовок 5</th>
+        </tr>
+        <tr>
+            <td>Ячейка 1</td>
+            <td>Ячейка 2</td>
+            <td>Ячейка 3</td>
+            <td>Ячейка 4</td>
+            <td>Ячейка 5</td>
+            <td>Ячейка 6</td>
+        </tr>
+        <tr>
+            <td colspan="2">Ячейка 7</td>
+            <td>Ячейка 8</td>
+            <td>Ячейка 9</td>
+            <td>Ячейка 10</td>
+            <td>Ячейка 11</td>
+        </tr>
+        <tr>
+            <td>Ячейка 12</td>
+            <td>Ячейка 13</td>
+            <td>Ячейка 14</td>
+            <td>Ячейка 15</td>
+            <td>Ячейка 16</td>
+            <td>Ячейка 17</td>
+        </tr>
+        <tr>
+            <td>Ячейка 18</td>
+            <td colspan="2">Ячейка 19</td>
+            <td>Ячейка 20</td>
+            <td>Ячейка 21</td>
+            <td>Ячейка 22</td>
+        </tr>
+        <tr>
+            <td>Ячейка 23</td>
+            <td>Ячейка 24</td>
+            <td>Ячейка 25</td>
+            <td>Ячейка 26</td>
+            <td colspan="2">Ячейка 27</td>
+        </tr>
+        <tr>
+            <td>Ячейка 28</td>
+            <td>Ячейка 29</td>
+            <td>Ячейка 30</td>
+            <td colspan="2">Ячейка 31</td>
+            <td>Ячейка 32</td>
+        </tr>
+        </table>
+    </div>
 
-        <li><a href="/layer1/layer2/test.html">Сокращённая ссылка на внутреннюю страницу test.html</a></li>
+    <div id="form">
+        <h2>Форма для обязательного заполнения (я проверю)</h2>
+        <form id="main-form" name="main-form">
+            <label>
+                ФИО
+                <input type="text" id="full-name" placeholder="Введите ФИО:"><br>
+            </label>
+            <br>
 
-        <li><a href="/layer1/layer2/index.html">Сокращённая ссылка на главную страницу</a></li>
-
-        <li><a href="#title">Ссылка на фрагмент текущей страницы (заголовок h1)</a></li>
-
-        <li><a href="https://example.com/?a=228&b=4&g=1337">Ссылка с тремя параметрами в URL</a></li>
-
-        <li><a href="https://example.com/?id=1337228">Ссылка с параметром id в URL</a></li>
-
-        <li><a href="./test.html">Относительная ссылка на страницу в текущем каталоге</a></li>
-
-        <li><a href="./about/about-page.html">Относительная ссылка на страницу в каталоге about</a></li>
-
-        <li><a href="../middle.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
-
-        <li><a href="../../top.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
-
-        <li>
-            <p>
-                Контекстная <a href="test.html">ссылка</a> в тексте абзаца
-            </p>
-        </li>
-
-        <li><a href="https://en.wikipedia.org/wiki/Main_Page#vector-main-menu-dropdown-checkbox">Ссылка на фрагмент страницы стороннего сайта</a>
-        </li>
-
-        <li>
-            <img src="planets.gif" height="126" alt="Planets" usemap="#planetmap">
-            <map name="planetmap" id="planetmap">
-                <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
-                <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
-                <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
-            </map>
-        </li>
-
-        <li><a href="">Ссылка с пустым href</a></li>
-
-        <li><a>Ссылка без href</a></li>
-
-        <li><a href="https://kubsu.ru" rel="nofollow">Ссылка</a>, по которой запрещён переход поисковикам</li>
-
-        <li>
-        <!--noindex-->
-            <a href="https://www.kubsu.ru/index.php">Ссылка</a>, запрещённая для индексации поисковиками
-        <!--/noindex-->
-        </li>
-
-
-        <li>Нумерованный список ссылок с подписями title
-            <ol>
-                <li><a href="https://www.kubsu.ru/ru/fktipm"
-                       title="Факультет компьютерных технологий и прикладной математики">ФКТиПМ</a></li>
-                <li><a href="https://www.kubsu.ru/ru/rgf" title="Факультет романо-германской филологии">РГФ</a></li>
-                <li><a href="https://www.kubsu.ru/ru/econ" title="Экономический факультет">Эконом</a></li>
-
-            </ol>
-        </li>
-
-        <li><a href="ftp://user:password@theftpserver.com/files/accounts.pdf">Ссылка</a> на файл на сервере FTP с
-            авторизацией
-        </li>
-    </ul>
-
-    <table id="table">
-    <tr>
-        <th colspan="2">Заголовок 1</th>
-        <th>Заголовок 2</th>
-        <th>Заголовок 3</th>
-        <th>Заголовок 4</th>
-        <th>Заголовок 5</th>
-    </tr>
-    <tr>
-        <td>Ячейка 1</td>
-        <td>Ячейка 2</td>
-        <td>Ячейка 3</td>
-        <td>Ячейка 4</td>
-        <td>Ячейка 5</td>
-        <td>Ячейка 6</td>
-    </tr>
-    <tr>
-        <td colspan="2">Ячейка 7</td>
-        <td>Ячейка 8</td>
-        <td>Ячейка 9</td>
-        <td>Ячейка 10</td>
-        <td>Ячейка 11</td>
-    </tr>
-    <tr>
-        <td>Ячейка 12</td>
-        <td>Ячейка 13</td>
-        <td>Ячейка 14</td>
-        <td>Ячейка 15</td>
-        <td>Ячейка 16</td>
-        <td>Ячейка 17</td>
-    </tr>
-    <tr>
-        <td>Ячейка 18</td>
-        <td colspan="2">Ячейка 19</td>
-        <td>Ячейка 20</td>
-        <td>Ячейка 21</td>
-        <td>Ячейка 22</td>
-    </tr>
-    <tr>
-        <td>Ячейка 23</td>
-        <td>Ячейка 24</td>
-        <td>Ячейка 25</td>
-        <td>Ячейка 26</td>
-        <td colspan="2">Ячейка 27</td>
-    </tr>
-    <tr>
-        <td>Ячейка 28</td>
-        <td>Ячейка 29</td>
-        <td>Ячейка 30</td>
-        <td colspan="2">Ячейка 31</td>
-        <td>Ячейка 32</td>
-    </tr>
-</table>
-
-    <h2>Форма для обязательного заполнения (я проверю)</h2>
-    <form id="main-form" name="main-form">
-        <label>
-            ФИО
-            <input type="text" id="full-name" placeholder="Введите ФИО:"><br>
-        </label>
-        <br>
-
-        <label>
-            Номер телефона
-            <input type="tel" id="phone-number" placeholder="Введите номер телефона:"><br>
-        </label>
-        <br>
+            <label>
+                Номер телефона
+                <input type="tel" id="phone-number" placeholder="Введите номер телефона:"><br>
+            </label>
+            <br>
 
 
-        <label>
-            Email
-            <input type="text" id="email" placeholder="Введите email:"><br>
-        </label>
-        <br>
+            <label>
+                Email
+                <input type="text" id="email" placeholder="Введите email:"><br>
+            </label>
+            <br>
 
-        <label>
-            Дата рождения
-            <input type="date" id="date-of-birth"><br>
-        </label>
-        <br>
+            <label>
+                Дата рождения
+                <input type="date" id="date-of-birth"><br>
+            </label>
+            <br>
 
-        <label>
-            Пол<br>
-        </label>
-        <br>
+            <label>
+                Пол<br>
+            </label>
+            <br>
 
-        <label>
-            <input type="radio" name="gender" value="male"> Мужской<br>
-        </label>
-        <br>
+            <label>
+                <input type="radio" name="gender" value="male"> Мужской<br>
+            </label>
+            <br>
 
-        <label>
-            <input type="radio" name="gender" value="female"> Женский<br>
-        </label>
-        <br>
+            <label>
+                <input type="radio" name="gender" value="female"> Женский<br>
+            </label>
+            <br>
 
-        <label>
-            <strong>Любимый язык программирования</strong>
-            <select id="programming-language" name="programming-language">
-                <option value="Pascal">Pascal</option>
-                <option value="C">C</option>
-                <option value="C++">C++</option>
-                <option value="JavaScript">JavaScript</option>
-                <option value="PHP">PHP</option>
-                <option value="Python">Python</option>
-                <option value="Java">Java</option>
-                <option value="Haskel">Haskel</option>
-                <option value="Clojure">Clojure</option>
-                <option value="Prolog">Prolog</option>
-                <option value="Scala">Scala</option>
-            </select><br>
-        </label>
-        <br>
+            <label>
+                <strong>Любимый язык программирования</strong>
+                <select id="programming-language" name="programming-language">
+                    <option value="Pascal">Pascal</option>
+                    <option value="C">C</option>
+                    <option value="C++">C++</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="Haskel">Haskel</option>
+                    <option value="Clojure">Clojure</option>
+                    <option value="Prolog">Prolog</option>
+                    <option value="Scala">Scala</option>
+                </select><br>
+            </label>
+            <br>
 
-        <label>
-            Биография<br>
-            <textarea name="bio" id="bio" placeholder="Я родился в Москве в 70-м на краю города ..."></textarea>
-        </label>
-        <br>
+            <label>
+                Биография<br>
+                <textarea name="bio" id="bio" placeholder="Я родился в Москве в 70-м на краю города ..."></textarea>
+            </label>
+            <br>
 
-        <label>
-            <input type="checkbox" name="agreement" id="agreement">
-            С контрактом ознакомлен
-        </label>
-        <br>
+            <label>
+                <input type="checkbox" name="agreement" id="agreement">
+                С контрактом ознакомлен
+            </label>
+            <br>
 
-        <label>
-            <button type="submit" name="send" id="send">
-                Отправить
-            </button>
-        </label>
-    </form>
+            <label>
+                <button type="submit" name="send" id="send">
+                    Отправить
+                </button>
+            </label>
+        </form>
+    </div>
 </main>
-
 <footer>
     <span>&#169; Samusev Denis 2024</span>
 </footer>

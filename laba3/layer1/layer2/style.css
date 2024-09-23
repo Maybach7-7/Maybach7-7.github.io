@@ -1,5 +1,6 @@
 body {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .hidden {
@@ -13,7 +14,7 @@ header {
 
 .header-content-first {
     display:flex;
-    background-color: darkseagreen;
+    background-color: #AFCFAF;
     border-bottom: 2px solid grey;
     flex: 1;
     order: 1;
@@ -23,35 +24,108 @@ header {
 
 #logo {
     order: 1;
-    width: 100px;
-    margin: 8px;
+    width: 20vw;
+    margin: 1.5vw;
 }
 
 #main-name {
+    font-size: 8vw;
     order: 2;
-    margin:8px;
+    margin:1.5vw;
     font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 .header-content-second {
-    background-color: darkseagreen;
+    background-color: #8FBC8F;
     flex: 2;
     order:2;
+    margin-bottom: 1vw;
 }
 
-nav ul {
+.header-content-second ul {
+    font-size: 5vw;
     margin: 0;
-    padding: 2px 2px 3px 10px;
+    padding: 1vw 1vw 1vw 3vw;
     list-style-type: none;
 }
 
-h1 {
-    display: inline-block;
+main {
+    display: flex;
+    flex-direction: column;
 }
 
-ul a {
-    display: inline-block;
-    padding: 5px;
+#table-content {
+    order:-1;
+    margin: 1vw 1vw 1vw 1vw;
+}
+
+#table-content table{
+    border-color:black;
+    margin:0 auto;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 0.9vw;
+    text-align: center;
+    border: 1px solid;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+#list {
+    margin: 2vw;
+}
+
+#list h2 {
+    font-size: 6vw;
+    text-align: center;
+    margin: 2vw 0 2vw 0;
+}
+
+#list ul {
+    padding-left: 27px;
+    font-size: 4.1vw;
+}
+
+#list img {
+    width: calc(100% - 4vw);
+}
+
+#form {
+    margin: 2vw;
+}
+
+#form h2 {
+    font-size: 6vw;
+    text-align: center;
+    margin: 2vw 0 2vw 0;
+}
+
+#main-form {
+    padding: 2vw;
+}
+
+#main-form label {
+    font-size: 4vw;
+}
+
+footer {
+    font-size: 4.2vw;
+    margin-top: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+    background-color: #3ea1a1;
+    border-top: 0.5vw solid #ccc;
+    height: 10vw;
 }
 
 @media screen and (min-width:800px) {
