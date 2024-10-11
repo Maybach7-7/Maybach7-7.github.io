@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа 5</title>
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <h1>Калькулятор продуктов</h1>
+    <form>
+        <label for="products">Выберите нужный продукт: </label>
+        <select id="products" name="products" style="margin-bottom: 10px">
+            <option value="900">Сыр Ламбер - 900р</option>
+            <option value="130">Сгущёнка Коровка из кореновки - 130р</option>
+            <option value="150">Сок Rich апельсиновый - 150р</option>
+            <option value="450">Чевапчичи - 450р</option>
+            <option value="45">Сухарики 3 Корочки с кетчупом - 45р</option>
+        </select>
+        <br>
+
+        <label for="quantity">Введите количество продуктов:</label>
+        <input id="quantity" name="quantity" type="number" min="1" value="1" style="margin-bottom: 10px">
+        <br>
+
+        <button id="button" type="submit" style="padding:5px">Сафонов, оплатить!</button>
+    </form>
+
+    <div id="result" style="margin:20px 0 0 0; display:inline-block;"></div>
+</body>
+</html>
