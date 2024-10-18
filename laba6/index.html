@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа 5</title>
+    <script defer src="main.js"></script>
+</head>
+
+<body style="margin:0">
+    <div style="margin:20px">
+        <h2 style="margin: 0;padding: 14px 0 14px 0">Калькулятор продуктов</h2>
+        <form>
+            <label for="products">Выберите нужный продукт: </label>
+            <select id="products" name="products" style="margin-bottom: 10px">
+                <option value="900">Сыр Ламбер - 900р</option>
+                <option value="130">Сгущёнка Коровка из кореновки - 130р</option>
+                <option value="150">Сок Rich апельсиновый - 150р</option>
+                <option value="450">Чевапчичи - 450р</option>
+                <option value="45">Сухарики 3 Корочки с кетчупом - 45р</option>
+                <option value="120">Кофе капучино 0,3 - 120р</option>
+            </select>
+            <br>
+
+            <label for="quantity-product">Введите количество продуктов:</label>
+            <input id="quantity-product" name="quantity" type="number" min="1" value="1" style="margin-bottom: 10px">
+            <br>
+
+            <button id="button-product" type="submit" style="padding:5px">Сафонов, оплатить!</button>
+        </form>
+
+        <div id="result-product" style="margin:20px 0 0 0; display:inline-block;"></div>
+    </div>
+
+    <div style="margin:20px">
+        <h2>Калькулятор услуг</h2>
+        <form>
+            <label for="quantity-service">Введите количество услуг:</label>
+            <input id="quantity-service" type="number" min="0" value="1" style="margin-bottom: 10px">
+
+            <div id="services">
+                <h3>Выберите подходящую услугу:</h3>
+                <label>
+                    <input type="radio" name="myradio" value="0">
+                    Пожарить чевапчичи
+                </label>
+                <label>
+                    <input type="radio" name="myradio" value="1" >
+                    Добавить что-то в кофе
+                </label>
+                <label>
+                    <input type="radio" name="myradio" value="2">
+                    Без услуг
+                </label>
+
+                <br>
+            </div>
+            <div id="options"></div>
+            <div id="properties"></div>
+            <br>
+            <button id="button-service" style="padding:5px">Добавить услугу</button>
+        </form>
+        <div id="result-service" style="margin:20px 0 0 0; display:inline-block;"></div>
+    </div>
+</body>
+</html>
