@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа 8</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <button id="open-form">Открыть форму</button>
+    </div>
+    <div class="popup">
+        <div class="popup-content">
+            <h3>Форма для розыгрыша</h3><br>
+
+            <form id="form">
+                <table>
+                    <tr>
+                        <td><label for="fio">ФИО</label></td>
+                        <td><input name="fio" id="fio" type="text" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input name="email" id="email" type="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Телефон</label></td>
+                        <td><input id="phone" name="phone" type="tel" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="org">Организация</label></td>
+                        <td><input id="org" name="org" type="text" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="message">Сообщение</label></td>
+                        <td><textarea id="message" name="message" placeholder="Введите Ваше сообщение"></textarea></td>
+                    </tr>
+                </table>
+
+                <label>
+                    <input type="checkbox" name="checkbox">
+                    Я согласен с политикой конфиденциальности
+                </label>
+                <br>
+                <div id="button-container">
+                    <button type="submit">Отправить</button>
+                    <button id="close-form" type="button">Закрыть форму
+                        (хочу быть бедным)
+                    </button>
+                </div>
+                <div id="result"></div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
